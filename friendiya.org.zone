@@ -1,6 +1,6 @@
-; Zone file for friendiya.gov.uf
+; Zone file for friendiya.org
 $TTL 86400
-@    IN  SOA ns1.friendiya.gov.uf. admin.friendiya.gov.uf. (
+@    IN  SOA ns1.friendiya.org. admin.friendiya.org. (
         2025011201 ; Serial
         3600       ; Refresh
         1800       ; Retry
@@ -9,12 +9,12 @@ $TTL 86400
 )
 
 ; Define the domain name servers
-@    IN  NS  ns1.friendiya.gov.uf.
-@    IN  NS  ns2.friendiya.gov.uf.
+@    IN  NS  ns1.friendiya.org.
+@    IN  NS  ns2.friendiya.org.
 
 ; Define the A records
 @    IN  A   140.82.114.4
 www  IN  A   140.82.114.4
 
 ; Define the CNAME record to point to the GitHub Pages site
-friendiya.github.io. IN CNAME friendiya.gov.uf.
+friendiya.github.io. IN CNAME friendiya.org.
