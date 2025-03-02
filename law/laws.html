@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law Library A-Z</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            background-color: red; /* Red theme for the header */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+            background-color: #f0f0f0;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            background-color: blue; /* Blue theme for the footer */
+        }
+        #search-bar {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid yellow; /* Yellow theme for the search bar border */
+        }
+        .law {
+            display: none;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            background-color: #fff;
+        }
+        .law ul {
+            padding-left: 1.5rem;
+        }
+        .law ul li a {
+            color: red; /* Red theme for the links */
+            text-decoration: none;
+        }
+        .law ul li a:hover {
+            text-decoration: underline;
+            color: blue; /* Change link color to blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Law Library A-Z</h1>
+        <input type="text" id="search-bar" placeholder="Search for laws...">
+    </header>
+
+    <main>
+        <section class="law" id="a">
+            <h2>A</h2>
+            <ul>
+                <li><a href="path/to/act1.pdf" target="_blank">Act 1: Description of Act 1</a></li>
+                <li><a href="path/to/act2.pdf" target="_blank">Act 2: Description of Act 2</a></li>
+            </ul>
+        </section>
+        <section class="law" id="b">
+            <h2>B</h2>
+            <ul>
+                <li><a href="path/to/bill1.pdf" target="_blank">Bill 1: Description of Bill 1</a></li>
+                <li><a href="path/to/bill2.pdf" target="_blank">Bill 2: Description of Bill 2</a></li>
+            </ul>
+        </section>
+       
+    </main>
+
+
+    <script>
+        document.getElementById('search-bar').addEventListener('input', function(event) {
+            const query = event.target.value.toLowerCase();
+            const laws = document.querySelectorAll('.law');
+            laws.forEach(function(law) {
+                if (law.textContent.toLowerCase().includes(query)) {
+                    law.style.display = 'block';
+                } else {
+                    law.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
