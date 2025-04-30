@@ -1,84 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="gaa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naanyobɔɔ ni Efee ekome - Shia baafai</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-        }
-        header {
-            background-color: #0044cc;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #003399;
-            padding: 0.5rem 0;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        .hero {
-            background: url('hero-image.jpg') no-repeat centre centre/cover;
-            height: 400px;
-            display: flex;
-            justify-content: centre;
-            align-items: centre;
-            color: #fff;
-            text-align: centre;
-            flex-direction: column;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        .section {
-            margin: 2rem 0;
-        }
-        .section h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 0.5rem;
-        }
-        .flag {
-            display: flex;
-            justify-content: centre;
-            margin: 2rem 0;
-        }
-        .news, .services, .guidance, .research, .policy {
-            background-color: #e8e8e8;
-            padding: 1rem;
-            border-radius: 5px;
-        }
-        .footer {
-            background-color: #333;
-            color: #fff;
-            text-align: centre;
-            padding: 1rem 0;
-            margin-top: 2rem;
-            display: flex;
-            justify-content: space-around;
-        }
-        .footer div {
-            margin: 0.5rem 0;
-        }
+ <style>
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #0044cc;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #003399;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0.5rem 1rem;
+    white-space: nowrap;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center / cover;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.section {
+    margin: 2rem 0;
+}
+
+.section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+.flag {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.news, .services, .guidance, .research, .policy {
+    background-color: #e8e8e8;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    flex-direction: column;
+}
+
     </style>
 </head>
 <body>
